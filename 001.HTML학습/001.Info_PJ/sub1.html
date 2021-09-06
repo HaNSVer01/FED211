@@ -41,6 +41,19 @@
             color: red;
         }
 
+        /* "양보"만 파란색 두껍게 나오게 해이징~ */
+        .bl {
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        /* 테이블 요소  */
+        #tbl {
+            width: 316px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
     </style>
 
 </head>
@@ -91,7 +104,7 @@
             </figure>
 
             <!-- 기사내용 -->
-            <p>[데일리안 = 강현태 기자] 국제사회로부터 코로나19 <span>백신</span>을 할당받은 <mark>북한</mark>이 일부 물량에 대한 양보 의사를 밝힌 가운데 <b><mark>북한</mark>이 <span>백신</span> 효과
+            <p>[데일리안 = 강현태 기자] 국제사회로부터 코로나19 <span>백신</span>을 할당받은 <mark>북한</mark>이 일부 물량에 대한 <span class="bl">양보</span> 의사를 밝힌 가운데 <b><mark>북한</mark>이 <span>백신</span> 효과
                     및 부작용</b>을 우려하고 있다는 관측이 제기됐다.</p>
 
             <p>나기 샤피끄<sup>①</sup> 전 <i>세계보건기구(WHO)</i> 북한 프로그램 담당관은 4일(현지시각) 홍콩 일간 사우스차이나모닝포스트<abbr
@@ -235,7 +248,7 @@
 
             <h3>언론사별 가장 많이 본 뉴스</h3>
             <!-- 테이블요소 : 2열 3행-->
-            <table style="width: 316px;">
+            <table id="tbl">
                 <tr> <!-- 1행 -->
                     <td>
                         <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&mid=shm&sid1=001&oid=437&aid=0000275463&rankingType=RANKING" target="_blank">
