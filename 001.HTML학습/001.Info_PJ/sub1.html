@@ -25,18 +25,21 @@
             font-style: normal;
             /* 이텔릭 없앰 */
         }
-        
+
         /* 피겨박스 이미지 */
         figure img {
             width: 100%;
 
         }
-        
+
         /* 피겨설명박스 */
-        figcaption{
+        figcaption {
             font-size: 9px;
         }
-
+        /* 백신 글자만 빨간색  */
+        span {
+            color: red;
+        }
 
     </style>
 
@@ -72,6 +75,10 @@
         <!-- hr요소 : 가로구분선(css있으면 필요없음) -->
         <!-- 3. 메인 컨텐츠 -->
         <main>
+            <!-- 언론사 정보영역 -->
+            <div>
+                <img src="images/at1-1.png" alt="연합뉴스로고">
+            </div>
             <!-- 1. 기사제목 -->
             <h2>"코로나 백신 양보한 북한, 부작용·효과 우려하는 듯"</h2>
 
@@ -84,62 +91,175 @@
             </figure>
 
             <!-- 기사내용 -->
-            <p>[데일리안 = 강현태 기자] 국제사회로부터 코로나19 백신을 할당받은 <mark>북한</mark>이 일부 물량에 대한 양보 의사를 밝힌 가운데 <b><mark>북한</mark>이 백신 효과 및 부작용</b>을 우려하고 있다는 관측이 제기됐다.</p>
+            <p>[데일리안 = 강현태 기자] 국제사회로부터 코로나19 <span>백신</span>을 할당받은 <mark>북한</mark>이 일부 물량에 대한 양보 의사를 밝힌 가운데 <b><mark>북한</mark>이 <span>백신</span> 효과
+                    및 부작용</b>을 우려하고 있다는 관측이 제기됐다.</p>
 
-            <p>나기 샤피끄<sup>①</sup> 전 <i>세계보건기구(WHO)</i> 북한 프로그램 담당관은 4일(현지시각) 홍콩 일간 사우스차이나모닝포스트<abbr title="South China Morning Post">(SCMP)</abbr>와의 인터뷰에서 "드물게 발생하는 <strong>합병증 및 효과에 대한 우려</strong>가 보고되면서</p>
-            
-            <p>북한이 <em><ins>코로나</ins> 백신<sub>vaccine</sub> 접종을 망설이고 있을 가능성</em>이 있다"고 밝혔다.</p>
+            <p>나기 샤피끄<sup>①</sup> 전 <i>세계보건기구(WHO)</i> 북한 프로그램 담당관은 4일(현지시각) 홍콩 일간 사우스차이나모닝포스트<abbr
+                    title="South China Morning Post">(SCMP)</abbr>와의 인터뷰에서 "드물게 발생하는 <strong>합병증 및 효과에 대한 우려</strong>가
+                보고되면서</p>
 
-            <p>그는 <q>북한은 아스트라제네카(AZ) 백신의 잠재적 부작용을 우려하고, 시노백 백신<sup>②</sup>은 효과가 충분하지 않다고 우려할 가능성이 있다고 본다</q>고 말했다. <del>나도 참석해조잉</del></p>
+            <p>북한이 <em><ins>코로나</ins> <span>백신</span><sub>vaccine</sub> 접종을 망설이고 있을 가능성</em>이 있다"고 밝혔다.</p>
+
+            <p>그는 <q>북한은 아스트라제네카(AZ) <span>백신</span>의 잠재적 부작용을 우려하고, 시노백 <span>백신</span><sup>②</sup>은 효과가 충분하지 않다고 우려할 가능성이 있다고 본다</q>고 말했다.
+                <del>나도 참석해조잉</del></p>
 
             trustme@dailian.co.kr <br>
 
             강현태 기자 (trustme@dailian.co.kr) <br>
 
-            <a href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=100&oid=119&aid=0002527203" target="_blank">원본기사</a>
-            
+            <a href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=100&oid=119&aid=0002527203"
+                target="_blank">원본기사</a>
+
+            </main>
 
             <!-- 인용구 -->
-            <blockquote cite="https://ko.wikipedia.org/wiki/%EC%BD%94%EB%A1%9C%EB%82%98%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4">
-                코로나바이러스(영어: Coronavirus, 문화어: 코로나비루스)는 코로나바이러스과(영어: Coronaviridae)의 코로나바이러스아과(Coronavirinae)에 속하는 RNA 바이러스의 총칭으로,[1][2] 사람과 동물의 호흡기와 소화기계 감염을 유발한다. 주로 점막전염(粘膜感染), 비말전파(飛沫傳播)로 쉽게 감염되며, 사람에게는 일반적으로 경미한 호흡기 감염을 일으키지만 치명적인 감염을 유발하기도 하며, 소와 돼지는 설사, 닭은 호흡기 질환이 발생하기도 한다.
+            <blockquote
+                cite="https://ko.wikipedia.org/wiki/%EC%BD%94%EB%A1%9C%EB%82%98%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4">
+                코로나바이러스(영어: Coronavirus, 문화어: 코로나비루스)는 코로나바이러스과(영어: Coronaviridae)의 코로나바이러스아과(Coronavirinae)에 속하는 RNA
+                바이러스의 총칭으로,[1][2] 사람과 동물의 호흡기와 소화기계 감염을 유발한다. 주로 점막전염(粘膜感染), 비말전파(飛沫傳播)로 쉽게 감염되며, 사람에게는 일반적으로 경미한 호흡기
+                감염을 일으키지만 치명적인 감염을 유발하기도 하며, 소와 돼지는 설사, 닭은 호흡기 질환이 발생하기도 한다.
             </blockquote>
 
 
+            <hr>
+            <small> ① 전 북한 WHO 사무소 매니저 </small>
+            <p><small> ②시노백 코로나19 백신 또는 CoronaVac은 중화인민공화국의 국영 제약사 시노백이 개발한 코로나19 백신이다. </small></p>
 
-<hr> 
-<small> ① 전 북한 WHO 사무소 매니저 </small>
-<p><small>  ②시노백 코로나19 백신 또는 CoronaVac은 중화인민공화국의 국영 제약사 시노백이 개발한 코로나19 백신이다. </small></p>
+            <hr>
+            <h3>오늘의 명화</h3>
+            <img src="https://www.w3schools.com/html/img_the_scream.jpg" alt="뭉크의 절규" style="width: 50px;">
+            <br>
+            뭉크의<cite>[절규]</cite>
+            <br>
+            <bdo dir="rtl">얄리얄리얄라셩얄라리얄라</bdo>
 
-<hr>
-<h3>오늘의 명화</h3>
-<img src="https://www.w3schools.com/html/img_the_scream.jpg" alt="뭉크의 절규" style="width: 50px;">
-<br>
-뭉크의<cite>[절규]</cite>
-<br>
-<bdo dir="rtl">얄리얄리얄라셩얄라리얄라</bdo>
+            <hr>
 
-<hr>
+            <h3>데일리안 주요뉴스</h3>
+            <!-- 순서없는 리스트 -->
+            <ul>
+                <li>
+                    <a href="https://www.dailian.co.kr/news/view/1028545?sc=Naver" target=_"blank">
+                        북한, 국제사회 인도지원 연이어 수용…중국산 백신은 사실상 '거부'
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.dailian.co.kr/news/view/1029217?sc=Naver" target=_"blank">
+                        군사도발 예고했던 북한, 침묵 깨고 열병식 개최하나
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.dailian.co.kr/news/view/1029475?sc=Naver" target=_"blank">
+                        영변 재가동은?…北 외무성, 유럽의원 발언 '편집'해 美 비판
+                    </a>
+                </li>
+            </ul>
 
-<h3>데일리안 주요뉴스</h3>
-<ul>
-    <li>
-        <a href="https://www.dailian.co.kr/news/view/1028545?sc=Naver" target=_"blank">
-            북한, 국제사회 인도지원 연이어 수용…중국산 백신은 사실상 '거부'
-        </a>
-    </li>
-    <li>
-        <a href="https://www.dailian.co.kr/news/view/1029217?sc=Naver" target=_"blank">
-            군사도발 예고했던 북한, 침묵 깨고 열병식 개최하나
-        </a>
-    </li>
-    <li>
-        <a href="https://www.dailian.co.kr/news/view/1029475?sc=Naver" target=_"blank">
-            영변 재가동은?…北 외무성, 유럽의원 발언 '편집'해 美 비판
-        </a>
-    </li>
-</ul>
+            <hr>
 
-</hr>
+            <h3>데일리안 랭킹 뉴스</h3>
+            <!-- 순서있는 리스트 -->
+            <ol>
+                <li>
+                    <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&mid=shm&sid1=001&oid=119&aid=0002527479&rankingType=RANKING"
+                        target="_blank">
+                        '집값 10%로' 누구나집 본격화…시범사업 민간사업자 공모
+                    </a>
+                </li>
+                <li>
+                    <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&mid=shm&sid1=001&oid=119&aid=0002527200&rankingType=RANKING"
+                        target="_blank">
+                        20대 만취女에 폭행당한 40대 가장 "합의나 용서 없다"
+                    </a>
+                </li>
+                <li>
+                    <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&mid=shm&sid1=001&oid=119&aid=0002527491&rankingType=RANKING"
+                        target="_blank">
+                        김민석, '새치기 코로나 검사' 논란에 "참 죄송하다"
+                    </a>
+                </li>
+            </ol>
+
+            <hr>
+
+            <h3>분야별 주요뉴스</h3>
+            <!-- 용어설명리스트 -->
+            <dl>
+                <dt>정치</dt>
+                <dd>
+                    <a href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=100&oid=002&aid=0002208684"
+                        target="_blank">
+                        민주당 "윤석열, 후보직 사퇴하고 즉각 수사 받아야"
+                    </a>
+
+                </dd>
+                <dd>
+                    <a href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=100&oid=052&aid=0001636774"
+                        target="_blank">
+                        "윤석열, 공수처 나서야"...고발 사주 의혹 국회 긴급 현안 질의
+                    </a>
+                </dd>
+
+                <dt>경제</dt>
+                <dd>
+                    <a href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=101&oid=025&aid=0003132506"
+                        target="_blank">
+                        은행 대출 금리 석달간 0.5%p↑…KBㆍ신한도 더 올린다
+                    </a>
+
+                </dd>
+                <dd>
+                    <a href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=101&oid=008&aid=0004641103"
+                        target="_blank">
+                        씨젠, 델타·람다 진단시약 개발…"타액으로도 검출 가능"
+                </dd>
+
+                <dt>사회</dt>
+                <dd>
+                    <a href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=102&oid=018&aid=0005030046"
+                        target="_blank">
+                        1인당 25만원 국민지원금 지급 시작…“출생년도 끝자리 확인하세요”
+                    </a>
+
+                </dd>
+                <dd>
+                    <a href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=102&oid=421&aid=0005585712"
+                        target="_blank">
+                        288g 초미숙아 건우가 만든 기적…생존율 1% 극복하고 퇴원
+                    </a>
+                </dd>
+
+            </dl>
+
+            <hr>
+
+            <h3>언론사별 가장 많이 본 뉴스</h3>
+            <!-- 테이블요소 : 2열 3행-->
+            <table>
+                <tr> <!-- 1행 -->
+                    <td>
+                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&mid=shm&sid1=001&oid=437&aid=0000275463&rankingType=RANKING" target="_blank">
+                            마이크 발로 찬 강윤성, 이번엔 유치장 문 열린 틈타 경찰 …
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.naver.com/main/ranking/read.naver?mode=LSD&mid=shm&sid1=001&oid=437&aid=0000275463&rankingType=RANKING" target="_blank">
+                            <img src="https://mimgnews.pstatic.net/image/origin/437/2021/09/06/275463.jpg?type=nf88_60" alt="기사사진" style="width: 88; height: 60;">
+                        </a>
+                    </td>
+                </tr>
+                <tr> <!-- 2행 -->
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr> <!-- 3행 -->
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+
+            </hr>
 
 
             <!--
@@ -148,20 +268,20 @@
                 - alt 속성 : 이미지 설명
                 (alternative text - 대체 텍스트 - 웹 접근성을 위한 필수속성임!)
             -->
-        </main>
-        <hr>
+            </main>
+            <hr>
 
-        <!-- 4.하단 정보 -->
-        <footer>
-            <address>
-                서울시 강남구 대호빌딩 8층 <br>
-                대표: GreenKnight <br>
-                전화: 010-1234-5678
-            </address>
-            <!--
+            <!-- 4.하단 정보 -->
+            <footer>
+                <address>
+                    서울시 강남구 대호빌딩 8층 <br>
+                    대표: GreenKnight <br>
+                    전화: 010-1234-5678
+                </address>
+                <!--
                 adress 요소: 주소를 담는 요소
             -->
-        </footer>
+            </footer>
     </div>
 
     <!-- 
