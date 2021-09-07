@@ -4,52 +4,7 @@
 <head>
     <meta charset="uft-8">
     <title>최신드라마 - 월화드라마</title>
-    <style>
-        /* 
-            선택자 {
-                속성명 : 값;
-            }
-        */
-
-        /* 상단부분  */
-        #top {
-            text-align: center;
-        }
-
-        /* 컨텐츠부분 - 테이블 */
-        .tbl {
-            /* 테두리 두께 종류 색상*/
-            border: 5px solid #ccc;
-            /* 가로크기- width */
-            width: 800px;
-            /* 마진을이용한박스가로중앙정렬 : 양쪽 auto */
-            margin: 30px auto;
-        }
-
-        .tbl td {
-            font-size: 18px;
-            /* 줄간격: 숫자는 글자크기기준 배수
-            (PX사용가능) */
-            line-height: 2;
-            /* 안쪽여백 */
-            padding: 5px; 
-        }
-
-        /* 드라마 제목 */
-        .tbl a{
-            font-weight: bold;
-            color: black;
-            text-decoration: none;  /* 밑줄없앰 */
-        }
-
-        /* 마우스 오버시 글자색 밑줄 */
-        /* hover는 가상클래스 */
-        .tbl a:hover {
-            color: #f00;
-            text-decoration: underline;  /* 밑줄 */
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/common.css">
 </head>
 
 <body>
@@ -59,11 +14,11 @@
         <h1>최신드라마 - 월화드라마</h1>
 
         <!-- 1-2. 메뉴 -->
-        <h2>
-            <a href="drama1.html">
+        <h2 class="menu">
+            <a href="drama1.html" class="on">
                 월화드라마
             </a> |
-            <a href="drama1.html">
+            <a href="drama2.html">
                 수목드라마
             </a>
         </h2>
@@ -76,14 +31,14 @@
         <table class="tbl">
             <tr>
                 <!-- 첫번째 줄 -->
-                <td>
+                <td class="ic">
                     <!-- 이미지 -->
                     <a href="#"> 
                         <img src="./images/d1.jpg" alt="경찰수업">
                     </a>
                 </td>
 
-                <td>
+                <td class="tc">
                     <!-- 정보 -->
                     <a href="#">경찰수업</a><br>
                     KBS2 (월, 화) 오후 09:30<br>
@@ -92,7 +47,7 @@
 
                 </td>
 
-                <td>
+                <td class="ic">
                     <!-- 이미지 -->
                     <a href="#">
                         <img src="./images/d2.jpg" alt="홍천기">
@@ -100,7 +55,7 @@
                     </a>
                 </td>
 
-                <td>
+                <td class="tc">
                     <!-- 정보 -->
                     <a href="#">홍천기</a><br>
                     SBS (월, 화) 오후 10:00<br>
@@ -112,14 +67,14 @@
             </tr>
             <!-- 두번째 줄 -->
             <tr>
-                <td>
+                <td class="ic">
                     <!-- 이미지 -->
                     <a href="#">
                         <img src="./images/d3.jpg" alt="하이클래스">
                     </a>
                 </td>
 
-                <td>
+                <td class="tc">
                     <!-- 정보 -->
                     <a href="#">하이클래스</a><br>
                     tvN (월) 오후 10:30, (화) 오후 10:10<br>
@@ -127,14 +82,14 @@
                     <button>구독 2,342</button>
                 </td>
 
-                <td>
+                <td class="ic">
                     <!-- 이미지 -->
                     <a href="#">
                         <img src="./images/d4.jpg" alt="아모르파티">
                     </a>
                 </td>
 
-                <td>
+                <td class="tc">
                     <!-- 정보 -->
                     <a href="#">아모르 파티 - 사랑하라, 지금</a><br>
                     SBS (월~금) 오전 08:35<br>
