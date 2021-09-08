@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)http://127.0.0.1:5500/001.HTML%ED%95%99%EC%8A%B5/002.Drama.PJ/dramaTable.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>한국 최신 드라마 리스트</title>
+        <style>
+
+            #drama{
+                font-family : "맑은고딕";
+                font-size: 14px;
+                /* 글자크기 
+                 - 기본값은 16px (단위: px, em, re.\m, %) */
+                color:#222;
+            }
+
+            /* 테이블 td사이 공백 없애기 */
+            border-collapes: ;
+        </style>
+    </head>
+    <body>
+        <!-- 한국 최신 드라마 리스트 테이블 -->
+        <table id="drama" class="tbl" border="1">
+            <!-- 테이블 제목 -->
+            <caption>한국 최신 드라마 리스트 </caption>
+            <!-- 테이블 머리부분 : thead -->
+            <thead>
+                <tr>
+                    <!-- th는 td대신 머릿줄에 사용 -->
+                    <th>번호</th>
+                    <th>드라마명</th>
+                    <th>주연</th>
+                    <th>제작사</th>
+                    <th>구분</th>
+                    <th>방영시간</th>
+                    <th>방영횟수</th>                    
+                </tr>
+            </thead>
+
+                        <!-- 테이블 하단부분: tfoot / 상단부분에 넣어도 문제없이 출력됨-->
+                        <tfoot>
+                            <tr>
+                                <td colspan="7">
+                                ◀ 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 ▶
+                                </td>
+                                <!-- 
+                                    colspan 속성은 기본적으로 td를 합칠떄 사용함
+                                    상단의 td(th)가 7개이고 이것을 합치려면 
+                                    7개를 하나로 통합하는 값을 설정해 준다!
+                                    여기서 col은 column 컬럼(기둥)의 뜻
+                                    span은 "범위"라는 의미임
+                                -->
+                            </tr>
+                        </tfoot>
+
+            <!-- 테이블 중앙내용부분 : tbody -->
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>경찰수업</td>
+                    <td>진영,차태현</td>
+                    <td>KBS2</td>
+                    <td>월화</td>
+                    <td>오후 09:30</td>
+                    <td>16부작</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>홍천기</td>
+                    <td>김유정,안효섭</td>
+                    <td>SBS</td>
+                    <td>월화</td>
+                    <td>오후 10:00</td>
+                    <td>20부작</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>슬기로운 의사생활</td>
+                    <td>조정석,전미도</td>
+                    <td>TVN</td>
+                    <td>수목</td>
+                    <td>오후 09:00</td>
+                    <td>12부작</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>샹치</td>
+                    <td>조정석,전미도</td>
+                    <td>TVN</td>
+                    <td>수목</td>
+                    <td>오후 09:00</td>
+                    <td>12부작</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>배고파</td>
+                    <td>조정석,전미도</td>
+                    <td>TVN</td>
+                    <td>수목</td>
+                    <td>오후 09:00</td>
+                    <td>12부작</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>생활</td>
+                    <td>조정석,전미도</td>
+                    <td>TVN</td>
+                    <td>수목</td>
+                    <td>오후 09:00</td>
+                    <td>12부작</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>집으로</td>
+                    <td>조정석,전미도</td>
+                    <td>TVN</td>
+                    <td>수목</td>
+                    <td>오후 09:00</td>
+                    <td>12부작</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>생활</td>
+                    <td>조정석,전미도</td>
+                    <td>TVN</td>
+                    <td>수목</td>
+                    <td>오후 09:00</td>
+                    <td>12부작</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>안슬기로운 의사생활</td>
+                    <td>조정석,전미도</td>
+                    <td>TVN</td>
+                    <td>수목</td>
+                    <td>오후 09:00</td>
+                    <td>12부작</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>헝그리</td>
+                    <td>조정석,전미도</td>
+                    <td>TVN</td>
+                    <td>수목</td>
+                    <td>오후 09:00</td>
+                    <td>12부작</td>
+                </tr>
+
+            </tbody>
+
+
+
+
+
+        </table>
+
+
+
+
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
