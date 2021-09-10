@@ -180,7 +180,7 @@ body{
 }
 /* 캐릭터개별박스(.cat)에 마우스 오버시 .cd높이값 변경 */
 .cat:hover .cd{
-    height: 250px;
+    height: 200px;
 }
 
 /* 캐릭터설명 타이틀 */
@@ -246,4 +246,7 @@ ul.bm a:hover{
     padding: 10px 0;/* 위아래 10px 양쪽0 */
 }
 
+#blogo{
+    text-align: center;
+}
 
