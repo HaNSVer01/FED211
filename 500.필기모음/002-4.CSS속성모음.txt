@@ -13,6 +13,8 @@
 9. line-height : 배수/pm,em 등
 10. font한번에 쓰기
     -> font : 스두크/줄체;
+11. 글자그림자
+    text-shadow: x축 y축 블러 색;
 
 [ 박스모델관련 ]
 1. width: 가로크기

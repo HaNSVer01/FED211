@@ -73,7 +73,7 @@ body{
     display: block;/* 블록변경 */
     text-align: center;/* 가로중앙 적용! */
     margin-top: -22%;
-    /* 비율로 이미지가 변경되므로 마진도 상대적으로 변경되게 함! */
+    /* 비율로 이미지가 변경되므로 마진도 상대적으로 변경되게d 함! */
 }
 
 /* 캐릭터 이름 이미지 */
@@ -124,7 +124,7 @@ body{
     /* font-family: '맑은고딕'; */ 
 
     /* font: 스 두 크/줄 체; */
-    font: 14px/2 'Noto sans CJK kr', arial;
+    font: 15px/2 'Noto sans CJK kr', arial;
     
 }
 
