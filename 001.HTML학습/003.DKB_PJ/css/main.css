@@ -5,7 +5,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;/* 보이는 화면 높이값 채우기 */
+    height: 100%; /* 보이는 화면 높이값 채우기 */
 }
 
 body{
