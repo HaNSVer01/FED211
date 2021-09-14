@@ -54,12 +54,31 @@ li {
 }
 
 /* 1. 상단영역 */
-.top{
+.top {
     position: relative;
     /* 부모자격 - .gnb>ul>li::after */
     background-color: #fff;
     padding-top: 20px;
-    border-bottom: 1px solid #ccc;/* 하단구분선 */
+    border-bottom: 1px solid #ccc;
+    /* 하단구분선 */
+}
+
+/* 햄버거버튼 */
+.ham {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+
+    border: none;
+    background-color: transparent;
+    /* 배경없애기(투명) */
+
+    cursor: pointer;
+    /* 손가락모양 */
 }
 
 /* 로고 */
@@ -69,6 +88,7 @@ h1.logo {
     text-align: center;
     /* 내부에 있는 인라인 컨텐츠 중앙정렬 */
 }
+
 h1.logo img {
     width: 100px;
 }
@@ -78,27 +98,32 @@ h1.logo img {
 .gnb {
     max-width: 635px;
     /* 최대크기 635를 유지하다가 화면이 635보다 작아지먄 width:auto적용 */
-    margin: 0 auto;/* 블록요소 가로중앙 */
-    
-    
+    margin: 0 auto;
+    /* 블록요소 가로중앙 */
+
+
 }
 
 .gnb>ul {}
 
-.gnb>ul>li{
+.gnb>ul>li {
     padding: 0 17px;
     /* 양쪽을 동일하게 밀고 사이간격은 34px */
 }
 
-.gnb>ul>li>a{
-    display: block;/* 높이값 적용위해 */
-    height: 54px;/* 적용되나? */
+.gnb>ul>li>a {
+    display: block;
+    /* 높이값 적용위해 */
+    height: 54px;
+    /* 적용되나? */
     color: #000;
     text-decoration: none;
     font-size: 13px;
     line-height: 54px;
-    box-sizing: border-box;/* 보더,패딩 내부로 포함 */
+    box-sizing: border-box;
+    /* 보더,패딩 내부로 포함 */
 }
+
 /* 상위메뉴 오버시 보더로 밑줄만들기 */
 .gnb>ul>li>a:hover {
     border-bottom: 4px solid red;
@@ -106,7 +131,7 @@ h1.logo img {
 
 
 /* 서브메뉴 */
-.smenu{
+.smenu {
     position: absolute;
     /* background-color: #fff; */
 
@@ -120,34 +145,49 @@ h1.logo img {
     /* 트랜지션: 속시이지 */
     transition: height .4s ease-out;
 }
-.smenu li{
-    float: none;/* 플롯없앰 */
+
+.smenu li {
+    float: none;
+    /* 플롯없앰 */
 }
-.smenu a{
+
+.smenu a {
     color: #000;
     text-decoration: none;
     font-size: 13px;
     line-height: 30px;
 }
+
 /* 상위메뉴 마우스 오버시 서브메뉴 보이기 */
-.gnb>ul>li:first-child:hover .smenu {/* 서브메뉴 */
+.gnb>ul>li:first-child:hover .smenu {
+    /* 서브메뉴 */
     height: 90px;
 }
-.gnb>ul>li:first-child:hover::after {/* 가상요소배경 */
+
+.gnb>ul>li:first-child:hover::after {
+    /* 가상요소배경 */
     height: 100px;
     border-bottom: 2px solid red;
 }
-.gnb>ul>li:nth-child(3):hover .smenu {/* 서브메뉴 */
+
+.gnb>ul>li:nth-child(3):hover .smenu {
+    /* 서브메뉴 */
     height: 120px;
 }
-.gnb>ul>li:nth-child(3):hover::after {/* 가상요소배경 */
+
+.gnb>ul>li:nth-child(3):hover::after {
+    /* 가상요소배경 */
     height: 130px;
     border-bottom: 2px solid red;
 }
-.gnb>ul>li:nth-child(4):hover .smenu {/* 서브메뉴 */
+
+.gnb>ul>li:nth-child(4):hover .smenu {
+    /* 서브메뉴 */
     height: 60px;
 }
-.gnb>ul>li:nth-child(4):hover::after {/* 가상요소배경 */
+
+.gnb>ul>li:nth-child(4):hover::after {
+    /* 가상요소배경 */
     height: 70px;
     border-bottom: 2px solid red;
 }
@@ -156,12 +196,16 @@ h1.logo img {
 /* top값없이 젠틀하게 하려고 ::after를 사용함! */
 .gnb>ul>li::after {
     content: '';
-    display: block;/* 명시적 block코딩 */
-    position: absolute;/* 앱솔루트는 자동block! */
+    display: block;
+    /* 명시적 block코딩 */
+    position: absolute;
+    /* 앱솔루트는 자동block! */
     left: 0;
     /* 나의 부모는? .top */
-    width: 100%;/* 부모요소를 꽉채움! */
-    height: 0;/* 처음에 안보임! */
+    width: 100%;
+    /* 부모요소를 꽉채움! */
+    height: 0;
+    /* 처음에 안보임! */
     background-color: #fff;
 
     /* 부모요소 .top의 하단 보더 보이게 하기위해 마진탑이동! */
@@ -172,18 +216,18 @@ h1.logo img {
 }
 
 /* 메인,하단 랩핑박스 */
-.wrap{
+.wrap {
     /* 배경 한번에 셋팅하기! */
     /* background: 색 이미지 반복 고정 위치/크기;
     background: 색이반고윙/크; */
-    background: 
-    url(../images/bg_logo_a_01.png) no-repeat fixed 10% 25%/10%,
-    url(../images/bg_mainvisual.jpg) no-repeat fixed center/cover;
+    background:
+        url(../images/bg_logo_a_01.png) no-repeat fixed 10% 25%/10%,
+        url(../images/bg_mainvisual.jpg) no-repeat fixed center/cover;
     /* 배경이미지를 여러개 사용할 경우 먼저 쓴것이 위에온다! */
 }
 
 /* 2. 메인영역 */
-.cont{
+.cont {
     min-height: 800px;
     /* 최소높이 800px유지~ */
 }
@@ -191,7 +235,8 @@ h1.logo img {
 /* 캐릭터 박스 */
 #cbx {
     position: relative;
-    top: 400px;/* 원래위치에서 아래로 400px이동 */
+    top: 400px;
+    /* 원래위치에서 아래로 400px이동 */
     width: 90%;
     /* height: 300px; 
         자식요소 float때문에
