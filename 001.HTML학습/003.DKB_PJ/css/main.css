@@ -45,7 +45,7 @@ ol {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
+    
 }
 
 /* float해제 */
@@ -110,7 +110,6 @@ h1.logo img {
     
 }
 
-.gnb>ul {}
 
 .gnb>ul>li{
     padding: 0 17px;
