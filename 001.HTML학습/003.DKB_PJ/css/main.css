@@ -1,6 +1,12 @@
 @charset "utf-8";
 /* 도깨비 메인 CSS - main.css */
 
+/* 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Song+Myung&display=swap');
+
+/* font-family: 'Gowun Batang', serif;
+font-family: 'Song Myung', serif; */
+
 /* 초기화 셋팅 */
 html,
 body {
@@ -111,6 +117,8 @@ h1.logo img {
 }
 
 .gnb>ul>li>a{
+    font-family: 'Gowun Batang' , serif;
+    font-weight: 700;
     display: block;/* 높이값 적용위해 */
     height: 54px;/* 적용되나? */
     color: #000;
@@ -367,13 +375,16 @@ h1.logo img {
 /* 캐릭터설명 타이틀 */
 .cd h3 {
     padding: 5px 10px 0px;
+    
 }
 
 /* 캐릭터설명 문단 */
 .cd p {
     padding: 10px;
 
-    font: 14px/2 '맑은 고딕', '돋움', arial;
+    font: 14px/2 'Gowun Batang', serif, arial;
+    font-weight: 700;
+    
     /* font: 스타일 두께 크기/줄간격 글자체;
     font: 스 두 크/줄 체; */
 
@@ -415,7 +426,7 @@ ul.bm a {
     color: #222;
     text-decoration: none;
     /* 밑줄없앰 */
-    font: bold 14px/2 "맑은 고딕";
+    font: bold 14px/2 "Gowun Batang";
 }
 
 ul.bm a:hover {
@@ -431,7 +442,7 @@ ul.bm a:hover {
 
     margin: 20px auto;
     /* 위아래 20px 양쪽auto(중앙) */
-    font: normal 12px/2 "맑은 고딕";
+    font: bold 12px/2 "Gowun Batang";
     text-align: center;
     /* 글자중앙 */
 
