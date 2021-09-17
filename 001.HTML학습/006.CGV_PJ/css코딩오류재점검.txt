@@ -1,0 +1,1026 @@
+CGV
+index.html
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV PJ</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- JS?꾨뗀逾ユ뤃?肉?-->
+    <script>
+
+        // ?꾨뗀諭띄몴????館釉???紐꾪뀱??뽯퓠筌???쎈뻬??롫뮉 野껉퍔??
+        // -> ??λ땾?? -> ?怨몃선嚥?function
+        // ?類ㅻ뻼: function ??λ땾筌??袁⑤뼎癰궰??{?꾨뗀諭?
+        // ??λ땾???袁れ넅獄쏆룆??????
+        // function?? ??쇱뜖??뺤쨮 獄쏆꼶諭????λ튊??
+        function gogo(yo){ 
+            // yo ?袁⑤뼎癰궰????已?? 揶쏆뮆而?癒?갯??
+            // ?袁⑤뼎癰궰??롫뮉 ??λ땾?紐꾪뀱??癰귣?沅??揶쏅???
+            // ??곷툡?蹂λ뮉 筌롫뗀?덄뵳??⑤벀而????已?
+            // ????已?? ?怨쀬긾??뺤쨮 ?紐껁늺 ??덈쭡!
+
+            // 1. ??λ땾?紐꾪뀱?類ㅼ뵥 + ?袁⑤뼎揶??類ㅼ뵥
+            // alert(yo);
+
+            // 2. 癰궰野껋럩?귝뤃?沅?? ?袁⑤뼎????덉겫???袁⑹뵠?遺쎌빽??
+            //   ?袁⑹뵠?袁⑥쟿?袁⑹벥 src??욧쉐揶쏅??앮에??節뚮선餓Β??
+            // 疫꿸퀡???롫뮉 癰궰野껋럩沅??-> ??덉겫?怨몄뵠 獄쏅떽???play!
+            // ?癒곕릭?????? ?袁⑹뵠?袁⑥쟿??->  #tg
+            // DOM??곗쨮 JS?醫뤾문??띾┛!
+            // Document Object Model -> ??
+            // -> html???닌듼쒐몴??怨뺤뵬 ?遺용꺖???醫뤾문??롫뮉 獄쎻뫖苡?疫꿸퀣??
+            // -> ????륁뵠筌왖 筌왖???癒?뮉 ??삵돩野껊슣???
+            // ?遺우벥 ?袁⑥쒔筌왖 ->>>> document
+            // document???諛먁??뽰벥 筌ㅼ뮇湲??揶쏆빘猿?
+            // ?臾롫젏甕?>> ?怨쀯폒.?怨뺚봺??????뽯펶??筌왖???????????뽰뒻.揶쏅베沅볠뤃???곕엘??嚥?119甕곕뜆?
+            // ??...... ?? ??륁맄?닌딄쉐?遺용꺖嚥???쇰선揶쎛???얜챷???
+            // ??꽷?=)?? 揶쏆늾?????댁뵠 ?袁⑤빍????삘뀲筌잛럡而????긱걹??곗쨮 ??쇰선揶?(?醫딅뼣!)
+            // JS 筌뤿굝議딂눧紐? ??멸텊???紐??꾩뮆以?????
+            // ?????됰슢??怨???ASI(Auto Semicolon Insertion:?癒?짗 ?紐??꾩뮆以??節딅┛)????곻폒筌왖筌??얜챷?ｅ첎? 獄쏆뮇源??????됱몵沃샕嚥?揶쏆뮆而?癒? 筌욊낯???곻폒??野껉퍔???類ㅺ퐤????!!
+            document.getElementById("tg").src = 
+            "https://www.youtube.com/embed/"+
+            yo+
+            "?autoplay=1&loop=1&playlist="+
+            yo;
+            // 疫꿸퀣?덂첎誘る퓠 yo??곕뮉 癰궰??뤿퓠 ??용┸ ??덉겫?怨몃툡??逾믣첎誘れ뱽
+            // ??뱁??src揶쏅?肉??醫딅뼣??뺣뼄!!!
+
+
+
+        } ///////// gogo??λ땾 ///////////////////
+        ////////////////////////////////////////
+
+        /* 
+            ??λ땾???紐꾪뀱?? ?遺용꺖(??볥젃)????源????욧쉐??
+            ?怨뚭퍙??뤿연 揶쎛?館釉??
+            揶???源?硫? 獄쏆뮇源?醫딅르?????젻雅뚯눖???諭苑????됱벉 
+            ??源????욧쉐?? on+??源?紐껋구 ??곗쨮 ??已ワ쭪???곸춾
+            ??
+            onclick, ondblclick, onmouseover, onkeypress, onload ??
+            [??源????욧쉐 ???쒑린?
+            ?닌딄쉐: <??볥젃筌???源?紐꾨꺗??"揶?>
+            -> 揶쏅?肉??JS?꾨뗀諭띄몴??????????덈뼄!
+            -> 揶쏅?肉????λ땾?紐꾪뀱????????덈뼄!
+            -> ??源?紐꾨꺗?????샒??JS?꾨뗀逾ユ뤃?肉?癒?퐣筌?????롫즲 ??덈뼄~!(??륁㉦?????껃칰?곕맙!!!-???뮞?브쑬??
+        */
+
+
+    </script>
+</head>
+<body>
+
+    <!-- 1. ?怨룸뼊?怨몃열 -->
+    <header id="top" class="part">
+        <!-- 1-1.??륁뵠筌왖????? -->
+        <h1 class="tit">CGV ??뉙???怨몄겫?온</h1>
+        <!-- 1-2.?袁⑷퍥筌롫뗀??GNB) -->
+        <nav class="gnb">
+            <ul>
+                <li>
+                    <a href="#">?怨뱀넅</a>
+                    <!-- ??뺥닏筌롫뗀??-->
+                    <div class="smenu">
+                        <ol>
+                            <li>
+                                <a href="#">?얜??э㎕??뱜</a>
+                            </li>
+                            <li>
+                                <a href="#">HD ?紐껋쟿??곗쑎</a>
+                            </li>
+                            <li>
+                                <a href="#">?얜?????뵥??/a>
+                            </li>
+                            <li>
+                                <a href="#">CGV?袁る뱜??륁뒭??/a>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">??댿꼻</a>
+                    <!-- ??뺥닏筌롫뗀??-->
+                    <!-- <div class="smenu">
+                        <ol>
+                            <li>
+                                <a href="#">??쥓???댿꼻</a>
+                            </li>
+                            <li>
+                                <a href="#">?怨몄겫??볦퍢??/a>
+                            </li>
+                        </ol>
+                    </div> -->
+                </li>
+                <li>
+                    <a href="#">域밸???/a>
+                    <!-- ??뺥닏筌롫뗀??-->
+                    <!-- <div class="smenu">
+                        <ol>
+                            <li>
+                                <a href="#">CGV 域밸???/a>
+                            </li>
+                            <li>
+                                <a href="#">?諛명롦꽴?</a>
+                            </li>
+                            <li>
+                                <a href="#">CLUB ??뺥돩??/a>
+                            </li>
+                        </ol>
+                    </div> -->
+                </li>
+                <li>
+                    <a href="#">??源??amp;?뚎딆퓗</a>
+                    <!-- ??뺥닏筌롫뗀??-->
+                    <!-- <div class="smenu">
+                        <ol>
+                            <li>
+                                <a href="#">??源??/a>
+                            </li>
+                            <li>
+                                <a href="#">疫꿸퀬遊?紐꾧틣</a>
+                            </li>
+                            <li>
+                                <a href="#">筌띲끆援낉쭪?/a>
+                            </li>
+                        </ol>
+                    </div> -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 2. 筌롫뗄??怨몃열 -->
+    <main id="cont" class="part">
+        <!-- 2-1.??쎄쾿?깃퀡而??-->
+        <div id="screen">
+            <iframe id="tg" src="https://www.youtube.com/embed/2hnkUpo_2yg?autoplay=1&loop=1&playlist=2hnkUpo_2yg" allow="autoplay"></iframe>
+        </div>
+        <!-- 2-2.??뉙?紐꾧퐨??몄컭??-->
+        <nav class="mlist">
+            <ul>
+                <li>
+                    <!-- ??λ땾?紐꾪뀱??癰귣?沅???얜챷?꾢첎誘? 獄쏆꼶諭??獄쏆꼶諭??獄쏆꼶諭??!! ?怨쀬긾??뺤쨮 ??곕뼄! 域밸챶????얜챷?꾢첎誘れ뵠?? -->
+                    <a href="#" onclick="gogo('4Aqs-ojuE_Y');return false;">
+                        <!-- a?遺용꺖 ?????#??곗쨮 ?紐낅립 ??륁뵠筌왖 ?怨룸뼊??猷?
+                        ??筌띾맦由?袁る퉸 JS?紐꾪뀱??return false?꾨뗀諭띄몴??곕떽???뺣뼄! -->
+                        <!-- ?????-->
+                        <img src="images/m1.jpg" alt="??쑴? ?諭?????곷튊疫?>
+                        <!-- ?怨뱀넅?類ｋ궖 -->
+                        <ol class="movtxt">
+                            <li>??쑴? ?諭?????곷튊疫?/li>
+                            <li>揶쏅벤釉??筌ｌ뮇???/li>
+                            <li>??뺤뵬筌?筌롮뮆以?/li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('O0s8Btiv_Dg');return false;">
+                        <!-- ?????-->
+                        <img src="images/m2.jpg" alt="??뺣궗">
+                        <!-- ?怨뱀넅?類ｋ궖 -->
+                        <ol class="movtxt">
+                            <li>??뺣궗</li>
+                            <li>?⑤벊?,獄쏅베?ュ칰?</li>
+                            <li>??뺤뵬筌?/li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('TMwaYs4H7yI');return false;">
+                        <!-- ?????-->
+                        <img src="images/m3.jpg" alt="沃섎챶援밭뵳?>
+                        <!-- ?怨뱀넅?類ｋ궖 -->
+                        <ol class="movtxt">
+                            <li>沃섎챶援밭뵳?/li>
+                            <li>??뽰굙????쇰연??/li>
+                            <li>??뺤뵬筌?/li>
+                        </ol>
+                    </a>                    
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('Qh4bQK_PY90');return false;">
+                        <!-- ?????-->
+                        <img src="images/m4.jpg" alt="????쎈솁??>
+                        <!-- ?怨뱀넅?類ｋ궖 -->
+                        <ol class="movtxt">
+                            <li>????쎈솁??/li>
+                            <li>甕곗쥓苑?類λ뱜 ?뚮?苡?쳸怨쀭뒄</li>
+                            <li>??삘뵭??/li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('tfmRVC_GADw');return false;">
+                        <!-- ?????-->
+                        <img src="images/m5.jpg" alt="?紐꺿꼻??뺤삏??>
+                        <!-- ?怨뱀넅?類ｋ궖 -->
+                        <ol class="movtxt">
+                            <li>?紐꺿꼻??뺤삏??/li>
+                            <li>?袁???뽯뮞 筌띘삳즲筌띯뫀諭?/li>
+                            <li>??뺤뵬筌?/li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('Pj7CadRf82k');return false;">
+                        <!-- ?????-->
+                        <img src="images/m6.jpg" alt="?諭??>
+                        <!-- ?怨뱀넅?類ｋ궖 -->
+                        <ol class="movtxt">
+                            <li>?諭??/li>
+                            <li>??빿®뵳????臾믠??/li>
+                            <li>??る??癒?筌왖</li>
+                        </ol>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <!-- 3. ??롫뼊?怨몃열 -->
+    <footer id="info" class="part">
+        
+    </footer>
+    
+</body>
+</html>
+
+
+
+
+
+
+main.css ??由???얜챷??  獄쏅벡?ゅ첎? ??덇섶??곸１????而?
+
+
+@charset "utf-8";
+/* CGV PJ 筌롫뗄??CSS - main.css */
+
+/* ?紐?CSS???뵬 ??뱁뒄疫??믩챷彛?merging) */
+@import url(reset.css);
+@import url(core.css);
+
+/* ?紐????뵬 ??뱁뒄??@import????롪돌??CSS?紐????뵬
+?癒?퐣 ??삘뀲 ?紐?CSS???뵬????롪돌???얜챷苑뚧에???뱁뒄??疫꿸퀡???
+??뺣뼄. html?癒?퐣 link獄쎻뫗????遺욧퍕??筌ㅼ뮇?????????됰선??
+??뺣쐭筌???μ몛?源놁뱽 ?誘る연餓Β?? */
+
+body {
+    background-color: #000;
+    /* ?袁⑷퍥 野꺜?類ㅺ퉳 獄쏄퀗瑗?*/
+}
+
+/* ??됱뵠?袁⑹뜍 ?⑤벏???????*/
+.part {
+    width: 1200px;
+    margin: 0 auto;
+    /* 揶쎛嚥≪뮇夷??*/
+    outline: 3px dotted yellow;
+}
+
+/* 1. ?怨룸뼊?怨몃열 */
+#top {
+    position: relative;
+    /* ?봔筌뤴뫁?꾢칰? - .gnb */
+    height: 80px;
+    background: url(../images/curtain.jpg) repeat-x;
+    z-index: 999;
+}
+
+/* 1-1. ??륁뵠筌왖 ????? */
+.tit {
+    color: aquamarine;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+
+    /* 域밸챶??癒? ??곸뒠??Glow??ｋ궢 */
+    text-shadow: 0 0 10px aquamarine;
+}
+
+/* 1-2. ?袁⑷퍥筌롫뗀??GNB) */
+.gnb{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    /* ??륁벥?봔筌뤴뫀?? #top */
+}
+/* GNB li?귐딅뮞??*/
+.gnb li {
+    position: relative;
+    /* ?봔筌뤴뫁?꾢칰?- .smenu */
+    padding: 0 10px;
+    font-family: 'Jua', sans-serif;
+    /* 疫꼲?癒곌쾿疫?沃섎챷??類ㅻ뻻 16px?? */
+}
+
+/* GNB ??뺥닏筌롫뗀??*/
+.smenu{
+    position: absolute;
+    /* left?? transform????곸뒠??揶쎛嚥?餓λ쵐釉?類ｌ졊甕? */
+    left: 50%;/* ?봔筌뤴몿?嚥≪뮉寃뺞묾怨쀬벥 ??덉뺘筌띾슦寃?獄쎛????? */
+    transform: translateX(-50%);
+    /* ?癒?┛?癒?뻿??由????덉뺘????긱걹??곗쨮 ??猷? */
+    background: url(../images/bg_smenu.png) no-repeat center/cover;
+}
+
+.smenu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    /* ?봔筌뤴뫀?? .smenu */
+    transform: translate(-50%);
+
+
+    /* ??⑥퍟??筌띾슢諭얏묾?*/
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid red;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+
+.smenu li{
+    float: none;/* float??곸젫 */
+    font-size: 12px;
+}
+
+/* 2. 筌롫뗄??怨몃열 */
+#cont {
+    position: relative;
+    /* ?봔筌뤴뫁?꾢칰?*/
+    height: 788px;
+    background: url(../images/bg.jpg) no-repeat;
+}
+
+/* 2-1.??쎄쾿?깃퀡而??*/
+#screen {
+    position: absolute;
+    top: 135px;
+    left: 257px;
+    /* ??륁벥 ?봔筌뤴뫀?? #cont */
+    width: 701px;
+    height: 398px;
+    background-color: #000;
+
+}
+
+/* ??쎄쾿???袁⑹뵠?袁⑥쟿??*/
+#screen iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* 2-2. ??뉙?紐꾧퐨??몄컭??*/
+.mlist {
+    position: absolute;
+    bottom: 56px;
+    left: 252px;
+    overflow: hidden;
+    /* ??륂뒄???癒?뻼?遺용꺖 ??ｋ┛疫?
+    -> .movtxt?遺용꺖???봔筌뤴뫁肉?餓μ꼷鍮??怨몄뒠??뺣뼄! */
+}
+
+/* li?遺우쁽??*/
+.mlist ul>li {
+    margin: 0 10px;
+    /* li 獄쏅떽臾묕쭫??臾믡걹獄쎛疫?*/
+}
+
+/* ????????筌왖 */
+.mlist img {
+    width: 99px;
+    height: 140px;
+}
+
+/* ?怨뱀넅?類ｋ궖獄쏅벡??*/
+.movtxt{
+    position: absolute;
+    top: 100%;/* ?袁⑥삋筌잛럩肉??????됱벉! */
+    /* ??륁벥 ?봔筌뤴뫀?? .mlist */
+    /* left揶쏅?? ???샒??? ??놁몵沃샕嚥??醫???롫뼄! 
+    域밸챶???筌뤴뫀紐?li??됰퓠 域밸챶?嚥???됱벉! */
+
+    width: 99px;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    /* 疫꼲?癒???*/
+    font-family: 'Cute Font', cursive;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+
+    /* ?紐껋삏筌왖?? ??용뻻??? */
+    transition: top .4s ease-out;
+}
+
+/* ?怨뱀넅?類ｋ궖 li */
+.movtxt li{
+    float: none;
+    /* float??곸젫 */
+}
+
+/* 筌ｃ꺂苡뀐쭪?li???怨뱀넅??뺛걠??*/
+.movtxt li:first-child{
+    color: aqua;
+    font-size: 17px;
+    letter-spacing: -1px;/* ?癒?퍢 */
+    margin-top: 30px;
+    /* ?怨룸뼊獄쎛疫??袁⑥삋li??揶쏆늿?좄쳸??? */
+}
+
+/* ??????귐딅뮞?紐꾨퓠 筌띾뜆?????살쒔???怨뱀넅?類ｋ궖 ?????븍┛ */
+.mlist>ul>li:hover .movtxt{
+    top: 0;
+}
+
+/* 3. ??롫뼊?怨몃열 */
+#info {
+    height: 100px;
+}
+
+
+
+
+揶쎛?怨밴깻??뤿뮞
+揶쎛?怨몄뒄??
+
+?癒?빍筌롫뗄???= ??쎈늄??됱뿫??揶쏅쉼?좑쭪??怨밴묶?癒?퐣! ?④쑴????툡揶쎛疫?
+?紐껋젉筌왖??= ??꾩퍢????猷? ??筌띾뜆???쇱궎甕곌쑴????륁긾
+
+aside / div????쑴??
+
+???筌왖 - ?癒?봺筌△뫁???됱몵筌?
+獄쏄퉫???깆뒲?????筌왖揶쎛 揶쏆늿????륁궎筌?獄쏅벡???獄쏄퀗瑗??곗쨮 繹먮뗀??筌?쑴???鈺곌퀣???띾┛ ?紐낅맙
+
+
+
+
+
+
+?怨멸텢疫???룇????덇돌????살뻣
+
+@charset "utf-8";
+/* CGV PJ 筌롫뗄??CSS - main.css */
+
+/* ?紐?CSS???뵬 ??뱁뒄疫??믩챷彛?merging) */
+@import url(reset.css);
+@import url(core.css);
+
+/* ?紐????뵬 ??뱁뒄??@import????롪돌??CSS?紐????뵬
+?癒?퐣 ??삘뀲 ?紐?CSS???뵬????롪돌???얜챷苑뚧에???뱁뒄??疫꿸퀡???
+??뺣뼄. html?癒?퐣 link獄쎻뫗????遺욧퍕??筌ㅼ뮇?????????됰선??
+??뺣쐭筌???μ몛?源놁뱽 ?誘る연餓Β?? */
+
+body {
+    background-color: #000;
+    /* ?袁⑷퍥 野꺜?類ㅺ퉳 獄쏄퀗瑗?*/
+}
+
+/* ??됱뵠?袁⑹뜍 ?⑤벏???????*/
+.part {
+    width: 1200px;
+    margin: 0 auto;
+    /* 揶쎛嚥≪뮇夷??*/
+    outline: 3px dotted yellow;
+}
+
+/************************** 1. ?怨룸뼊?怨몃열 */
+#top {
+    position: relative;
+    /* ?봔筌뤴뫁?꾢칰? - .gnb */
+    height: 80px;
+    background: url(../images/curtain.jpg) repeat-x;
+    z-index: 999;
+}
+
+/* 1-1. ??륁뵠筌왖 ????? */
+.tit {
+    color: aquamarine;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+
+    /* 域밸챶??癒? ??곸뒠??Glow??ｋ궢 */
+    text-shadow: 0 0 10px aquamarine;
+}
+
+/* 1-2. ?袁⑷퍥筌롫뗀??GNB) */
+.gnb {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    /* ??륁벥?봔筌뤴뫀?? #top */
+}
+
+/* GNB li?귐딅뮞??*/
+.gnb li {
+    position: relative;
+    /* ?봔筌뤴뫁?꾢칰?- .smenu */
+    padding: 0 10px;
+    font-family: 'Jua', sans-serif;
+    /* 疫꼲?癒곌쾿疫?沃섎챷??類ㅻ뻻 16px?? */
+    font-size: 20px;
+}
+
+/* GNB ??뺥닏筌롫뗀??*/
+.smenu {
+    position: absolute;
+    /* left?? transform????곸뒠??揶쎛嚥?餓λ쵐釉?類ｌ졊甕? */
+    left: 50%;
+    /* ?봔筌뤴몿?嚥≪뮉寃뺞묾怨쀬벥 ??덉뺘筌띾슦寃?獄쎛????? */
+    transform: translateX(-50%);
+    /* ?癒?┛?癒?뻿??由????덉뺘????긱걹??곗쨮 ??猷? */
+    margin-top: 5px;
+    /* ?怨룸뼊獄쎛疫??袁⑺뒄鈺곌퀣??*/
+
+    width: 150px;
+    /* ?諭???由곁몴?雅뚯눘? ??꾪?auto??野껋럩???봔筌뤴뫂寃뺞묾怨뺤쨮 ??뽰젟??
+    ?怨뺤뵬???諭???由곁몴?餓μ꼷鍮??롫뮉 ?냈??곷뮞?? */
+    background: url(../images/bg_smenu.png) no-repeat center/cover;
+
+    padding: 3px;
+    /* ??ㅻ뎃 */
+    border-radius: 5px;
+    /* ?觀?먲쭗?κ퐣??*/
+    box-shadow: 0 0 5px #fff;
+    /* 獄쏅벡?ゆ묾?嚥≪뮇??: x y blur (spread) ??*/
+
+    display: none;
+    /* 筌ｌ꼷?????덈궖??*/
+
+}
+
+/* ?怨몄맄筌롫뗀????살쒔????뺥닏筌롫뗀??癰귣똻?졿묾?*/
+.gnb>ul>li:hover .smenu {
+    display: block;
+}
+
+
+
+
+/* 揶쎛?怨몄뒄???쨮 ??⑥퍟?類ｃ걟??筌띾슢諭얏묾?*/
+.smenu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    /* ?봔筌뤴뫀?? .smenu */
+    transform: translateX(-50%);
+
+    /* ??⑥퍟??筌띾슢諭얏묾?*/
+    
+    height: 0;
+    border-bottom: 10px solid #353535;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    /* ??沅ゅ첎怨뱀굨?? border-bottom????border-top?????? */
+    /* transparent????梨??- ??삘뀲??쀬겱?? rgba(0,0,0,0) */
+}
+
+.smenu ol {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.smenu li {
+    float: none;
+    /* float??곸젫 */
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* ??뺥닏筌롫뗀??a?遺용꺖 ??살쒔??*/
+.smenu a:hover {
+    color: red;
+
+}
+
+/* ??뺥닏筌롫뗀??a?遺용꺖 ??살쒔??揶쎛?怨몄뒄???쨮 ?癒???덀걟??*/
+.smenu a:hover::after {
+    content: '??; 
+    /* ?癒???덀걟??*/
+    float: right; /* ?紐껋뵬?紐꾩뒄????삘뀲筌???*/
+    font-weight: bold;
+
+}
+
+/* ??癰귣????????*/
+.tbar{
+    border-top: 1px solid #ccc;
+}
+
+/* ?怨멸텢疫?獄쏅벡??*/
+#cam {
+    position: absolute;
+    bottom: -19px;
+    right: -50px;
+    /* ?봔筌뤴뫀?? .gnb */
+}
+
+/* ?怨멸텢疫????筌왖 */
+#cam img {
+    width: 50px;
+}
+
+/* ??뗀而??*/
+.bim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    widows: 200px;
+    height: 71px;
+    background: url(../images/bim.png) no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+}
+
+/**************** 2. 筌롫뗄??怨몃열 *************/
+#cont {
+    position: relative;
+    /* ?봔筌뤴뫁?꾢칰?*/
+    height: 788px;
+    background: url(../images/bg.jpg) no-repeat;
+}
+
+/* 2-1.??쎄쾿?깃퀡而??*/
+#screen {
+    position: absolute;
+    top: 135px;
+    left: 257px;
+    /* ??륁벥 ?봔筌뤴뫀?? #cont */
+    width: 701px;
+    height: 398px;
+    background-color: #000;
+
+}
+
+/* ??쎄쾿???袁⑹뵠?袁⑥쟿??*/
+#screen iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* 2-2. ??뉙?紐꾧퐨??몄컭??*/
+.mlist {
+    position: absolute;
+    bottom: 56px;
+    left: 252px;
+    overflow: hidden;
+    /* ??륂뒄???癒?뻼?遺용꺖 ??ｋ┛疫?
+    -> .movtxt?遺용꺖???봔筌뤴뫁肉?餓μ꼷鍮??怨몄뒠??뺣뼄! */
+}
+
+/* li?遺우쁽??*/
+.mlist ul>li {
+    margin: 0 10px;
+    /* li 獄쏅떽臾묕쭫??臾믡걹獄쎛疫?*/
+}
+
+/* ????????筌왖 */
+.mlist img {
+    width: 99px;
+    height: 140px;
+}
+
+/* ?怨뱀넅?類ｋ궖獄쏅벡??*/
+.movtxt {
+    position: absolute;
+    top: 100%;
+    /* ?袁⑥삋筌잛럩肉??????됱벉! */
+    /* ??륁벥 ?봔筌뤴뫀?? .mlist */
+    /* left揶쏅?? ???샒??? ??놁몵沃샕嚥??醫???롫뼄! 
+    域밸챶???筌뤴뫀紐?li??됰퓠 域밸챶?嚥???됱벉! */
+
+    width: 99px;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    /* 疫꼲?癒???*/
+    font-family: 'Cute Font', cursive;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+
+    /* ?紐껋삏筌왖?? ??용뻻??? */
+    transition: top .4s ease-out;
+}
+
+/* ?怨뱀넅?類ｋ궖 li */
+.movtxt li {
+    float: none;
+    /* float??곸젫 */
+}
+
+/* 筌ｃ꺂苡뀐쭪?li???怨뱀넅??뺛걠??*/
+.movtxt li:first-child {
+    color: aqua;
+    font-size: 17px;
+    letter-spacing: -1px;
+    /* ?癒?퍢 */
+    margin-top: 30px;
+    /* ?怨룸뼊獄쎛疫??袁⑥삋li??揶쏆늿?좄쳸??? */
+}
+
+/* ??????귐딅뮞?紐꾨퓠 筌띾뜆?????살쒔???怨뱀넅?類ｋ궖 ?????븍┛ */
+.mlist>ul>li:hover .movtxt {
+    top: 0;
+}
+
+/****************************** 3. ??롫뼊?怨몃열 **************/
+#info {
+    height: 100px;
+}
+
+
+
+?怨멸텢疫???롪돌???袁⑸퓠椰꾧퀡???꾨뗀諭띌뜮袁㏉꺍??????살뻣~
+  
+@charset "utf-8";
+/* CGV PJ 筌롫뗄??CSS - main.css */
+
+/* ?紐?CSS???뵬 ??뱁뒄疫??믩챷彛?merging) */
+@import url(reset.css);
+@import url(core.css);
+
+/* ?紐????뵬 ??뱁뒄??@import????롪돌??CSS?紐????뵬
+?癒?퐣 ??삘뀲 ?紐?CSS???뵬????롪돌???얜챷苑뚧에???뱁뒄??疫꿸퀡???
+??뺣뼄. html?癒?퐣 link獄쎻뫗????遺욧퍕??筌ㅼ뮇?????????됰선??
+??뺣쐭筌???μ몛?源놁뱽 ?誘る연餓Β?? */
+
+body {
+    background-color: #000;
+    /* ?袁⑷퍥 野꺜?類ㅺ퉳 獄쏄퀗瑗?*/
+}
+
+/* ??됱뵠?袁⑹뜍 ?⑤벏???????*/
+.part {
+    width: 1200px;
+    margin: 0 auto;
+    /* 揶쎛嚥≪뮇夷??*/
+    outline: 3px dotted yellow;
+}
+
+/************** 1. ?怨룸뼊?怨몃열 *******************/
+#top {
+    position: relative;
+    /* ?봔筌뤴뫁?꾢칰? - .gnb */
+    height: 80px;
+    background: url(../images/curtain.jpg) repeat-x;
+    z-index: 999;
+}
+
+/* 1-1. ??륁뵠筌왖 ????? */
+.tit {
+    color: aquamarine;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+
+    /* 域밸챶??癒? ??곸뒠??Glow??ｋ궢 */
+    text-shadow: 0 0 10px aquamarine;
+}
+
+/* 1-2. ?袁⑷퍥筌롫뗀??GNB) */
+.gnb {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    /* ??륁벥?봔筌뤴뫀?? #top */
+}
+
+/* GNB li?귐딅뮞??*/
+.gnb li {
+    position: relative;
+    /* ?봔筌뤴뫁?꾢칰?- .smenu */
+    padding: 0 10px;
+    font-family: 'Jua', sans-serif;
+    /* 疫꼲?癒곌쾿疫?沃섎챷??類ㅻ뻻 16px?? */
+    font-size: 20px;
+}
+
+/* GNB ??뺥닏筌롫뗀??*/
+.smenu {
+    position: absolute;
+    /* left?? transform????곸뒠??揶쎛嚥?餓λ쵐釉?類ｌ졊甕? */
+    left: 50%;
+    /* ?봔筌뤴몿?嚥≪뮉寃뺞묾怨쀬벥 ??덉뺘筌띾슦寃?獄쎛????? */
+    transform: translateX(-50%);
+    /* ?癒?┛?癒?뻿??由????덉뺘????긱걹??곗쨮 ??猷? */
+    margin-top: 5px;
+    /* ?怨룸뼊獄쎛疫??袁⑺뒄鈺곌퀣??*/
+
+    width: 150px;
+    /* ?諭???由곁몴?雅뚯눘? ??꾪?auto??野껋럩???봔筌뤴뫂寃뺞묾怨뺤쨮 ??뽰젟??
+    ?怨뺤뵬???諭???由곁몴?餓μ꼷鍮??롫뮉 ?냈??곷뮞?? */
+    background: url(../images/bg_smenu.png) no-repeat center/cover;
+
+    padding: 3px;
+    /* ??ㅻ뎃 */
+    border-radius: 5px;
+    /* ?觀?먲쭗?κ퐣??*/
+    box-shadow: 0 0 5px #fff;
+    /* 獄쏅벡?ゆ묾?嚥≪뮇??: x y blur (spread) ??*/
+
+    display: none;
+    /* 筌ｌ꼷?????덈궖?? */
+}
+
+/* ?怨몄맄筌롫뗀????살쒔????뺥닏筌롫뗀??癰귣똻?졿묾?*/
+.gnb>ul>li:hover .smenu{
+    display: block;
+}
+
+/* 揶쎛?怨몄뒄???쨮 ??⑥퍟?類ｃ걟??筌띾슢諭얏묾?*/
+.smenu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    /* ?봔筌뤴뫀?? .smenu */
+    transform: translateX(-50%);
+
+    /* ??⑥퍟??筌띾슢諭얏묾?*/
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #353535;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    /* ??沅ゅ첎怨뱀굨?? border-bottom????border-top?????? */
+    /* transparent????梨??- ??삘뀲??쀬겱?? rgba(0,0,0,0) */
+}
+
+.smenu ol {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.smenu li {
+    float: none;
+    /* float??곸젫 */
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* ??뺥닏筌롫뗀??a?遺용꺖 ??살쒔??*/
+.smenu a:hover {
+    color: red;
+}
+
+/* ??뺥닏筌롫뗀??a?遺용꺖 ??살쒔??揶쎛?怨몄뒄???쨮 ?癒???덀걟??*/
+.smenu a:hover::after {
+    content: '??;
+    /* ?癒???덀걟??*/
+    float: right;
+    /* ?紐껋뵬?紐꾩뒄????삘뀲筌잛럥嫄? */
+    font-weight: bold;
+}
+
+/* ??癰귣????????*/
+.tbar {
+    border-top: 1px solid #ccc;
+}
+
+/* ?怨멸텢疫?獄쏅벡??*/
+#cam{
+    position: absolute;
+    bottom: -19px;
+    right: -50px;
+    /* ?봔筌뤴뫀?? .gnb */
+}
+/* ?怨멸텢疫????筌왖 */
+#cam img{
+    width: 50px;
+}
+/* ??뗀而??*/
+.bim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 71px;
+    background: url(../images/bim.png) no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+}
+
+
+
+/*************** 2. 筌롫뗄??怨몃열 ****************/
+#cont {
+    position: relative;
+    /* ?봔筌뤴뫁?꾢칰?*/
+    height: 788px;
+    background: url(../images/bg.jpg) no-repeat;
+}
+
+/* 2-1.??쎄쾿?깃퀡而??*/
+#screen {
+    position: absolute;
+    top: 135px;
+    left: 257px;
+    /* ??륁벥 ?봔筌뤴뫀?? #cont */
+    width: 701px;
+    height: 398px;
+    background-color: #000;
+
+}
+
+/* ??쎄쾿???袁⑹뵠?袁⑥쟿??*/
+#screen iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* 2-2. ??뉙?紐꾧퐨??몄컭??*/
+.mlist {
+    position: absolute;
+    bottom: 56px;
+    left: 252px;
+    overflow: hidden;
+    /* ??륂뒄???癒?뻼?遺용꺖 ??ｋ┛疫?
+    -> .movtxt?遺용꺖???봔筌뤴뫁肉?餓μ꼷鍮??怨몄뒠??뺣뼄! */
+}
+
+/* li?遺우쁽??*/
+.mlist ul>li {
+    margin: 0 10px;
+    /* li 獄쏅떽臾묕쭫??臾믡걹獄쎛疫?*/
+}
+
+/* ????????筌왖 */
+.mlist img {
+    width: 99px;
+    height: 140px;
+}
+
+/* ?怨뱀넅?類ｋ궖獄쏅벡??*/
+.movtxt {
+    position: absolute;
+    top: 100%;
+    /* ?袁⑥삋筌잛럩肉??????됱벉! */
+    /* ??륁벥 ?봔筌뤴뫀?? .mlist */
+    /* left揶쏅?? ???샒??? ??놁몵沃샕嚥??醫???롫뼄! 
+    域밸챶???筌뤴뫀紐?li??됰퓠 域밸챶?嚥???됱벉! */
+
+    width: 99px;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    /* 疫꼲?癒???*/
+    font-family: 'Cute Font', cursive;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+
+    /* ?紐껋삏筌왖?? ??용뻻??? */
+    transition: top .4s ease-out;
+}
+
+/* ?怨뱀넅?類ｋ궖 li */
+.movtxt li {
+    float: none;
+    /* float??곸젫 */
+}
+
+/* 筌ｃ꺂苡뀐쭪?li???怨뱀넅??뺛걠??*/
+.movtxt li:first-child {
+    color: aqua;
+    font-size: 17px;
+    letter-spacing: -1px;
+    /* ?癒?퍢 */
+    margin-top: 30px;
+    /* ?怨룸뼊獄쎛疫??袁⑥삋li??揶쏆늿?좄쳸??? */
+}
+
+/* ??????귐딅뮞?紐꾨퓠 筌띾뜆?????살쒔???怨뱀넅?類ｋ궖 ?????븍┛ */
+.mlist>ul>li:hover .movtxt {
+    top: 0;
+}
+
+/************** 3. ??롫뼊?怨몃열 *******************/
+#info {
+    height: 100px;
+}
+
+
+https://kyung-a.tistory.com/14?category=937838 ?귐딅퓡?紐꾧강??
+
+
+
+
