@@ -106,7 +106,113 @@
             text-align: right;
             padding-right: 50px;
         }
+
+        /* 첫번째 파트 */
+        /* 
+        요소명.클래스명 -> 종속선택자
+            -> 종속선택자를 언제 쓰는가?
+            1) 같은 클래스명인데 요소별로 다른 세팅을 할때
+            2) 클래스나 아이디의 요소명을 밝히고 싶을때 
+        */
+        ul.part1 {
+            /*  ul기본 3가지 없애기 */
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            /* 블릿없앰 */
+
+            width: 800px;
+            margin: 0 auto;
+            /* 마영오! */
+            margin-top: 20px;
+            border: 2px solid #ccc;
+            /* 보더 */
+            border-radius: 20px;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* 1번 li */
+        ul.part1 li:first-child {
+            font-size: 40px;
+            font-family: "궁서";
+            color: red;
+        }
+        /* 오버시 */
+        ul.part1 li:first-child:hover {
+            font-size: 50px;
+        }
+
+        /* 2번째 li */
+        ul.part1 li:nth-child(2) {
+            font-size: 30px;
+            font-family: "굴림";
+            color:navajowhite;
+            font-weight: bold;
+        }
+
+        /* 오버시 */
+        ul.part1 li:nth-child(2):hover {
+            color: skyblue;
+        }
+
+
+        /* 3번째 li */
+        ul.part1 li:nth-child(3) {
+            font-size: 24px;
+            font-family: "돋움";
+            color: olive;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* 오버시 */
+        ul.part1 li:nth-child(3):hover {
+            font-style: normal;
+        }
         
+        /* 4번째 li */
+        ul.part1 li:nth-child(4) {
+            font-size: 50px;
+            font-family: "궁서";
+            color: darkblue;
+        }
+
+        /* 처음에 한글(b태그)숨기기 */
+        ul.part1 li:nth-child(4) b {
+            display: none;
+        }
+
+        /* 오버시 한글(b태그)보이고 한자(span태그)숨기기 */
+        ul.part1 li:nth-child(4):hover b {
+            display: inline;
+        }
+
+        ul.part1 li:nth-child(4):hover span {
+            display: none;
+        }
+
+        /* 오버시에 li에 노란배경색 */
+        ul.part1 li:nth-child(4):hover {
+            background-color: yellow;
+        }
+
+        /* 4번 이후 모든 li 전부 세팅 */
+        /* 틸드(~)를 사용한 다중형제 요소 선택 */
+        ul.part1 li:nth-child(4)~li:hover {
+            font-size: 28px;
+            color:darkred;
+        }
+
+        /* 마지막 li */
+        /* 
+        틸드(~)를 사용한 css가 한단계 더 선택하여서 우선 순위가 높으무로 이것보다 우선순위를 높이는 가장쉬운 방법은 한단계위의 부모요소를 써주면 된다! -> 여기서 한 단계 위의 부모는 body!
+        */
+        body ul.part1 li:last-child {
+            font-size: 40px;
+            font-family: "맑은고딕";
+            color: darkseagreen;
+        }
     </style>
 </head>
 <body>
