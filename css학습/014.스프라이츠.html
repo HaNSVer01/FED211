@@ -42,21 +42,27 @@
             }
             /* 트위터 */
             .icons li:nth-child(1){
+                background-position: 0 0;
             }
             /* 트위터 오버시 */
             .icons li:nth-child(1):hover{
+                background-position: 0 -128px; 
             }
             /* 인스타 */
             .icons li:nth-child(2){
+                background-position: -128px 0;
             }
             /* 인스타 오버시 */
             .icons li:nth-child(2):hover{
+                background-position: -128px -128px;
             }
             /* 페북 */
             .icons li:nth-child(3){
+                background-position: -256px 0;
             }
             /* 페북 오버시 */
             .icons li:nth-child(3):hover{
+                background-position: -256px -128px;
             }
 
             /* a요소 확장하기 */
@@ -85,15 +91,21 @@
                 설명을 표시한 후 이를 숨겨서 설명을 제공
                 하는 것이 IR기법이다!
 
-                - 웹접근성은 웹에서 정보제공에 대한 평등성을 말한다!
+                - 웹접근성은 웹에서 정보제공에 대한 평등성을 말한다!            ->웹접근성을 올린다
                 - Sprites 기법을 사용할때 IR기법을 같이 사용한다!
 
                 [ 크롬 브라우저 스크린 리더기를 확장프로그램에서 설치한다! ]
                 ChromeVox Classic Extension
             
             */
-            /* IR 숨기기 class */
+            /* IR 숨기기 class  */
             /* display:none으로 숨기면 리더기가 못읽음! */
+            .bld {
+                display: block;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+            } 
             
 
     </style>
