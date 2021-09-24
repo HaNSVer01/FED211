@@ -78,6 +78,7 @@
         body {
             margin: 0;
             padding: 0;
+            overflow: hidden;
         }
 
         body {
@@ -128,6 +129,7 @@
         /* 첫번째 이미지만 보이게 */
         .screen img:first-child {
             display: inline;
+            /* 이미지는 인라인 */
         }
 
         /* 타이틀 */
@@ -158,45 +160,223 @@
 
         /* 미디어쿼리 적용하기 */
         /* 1200px 이하 */
-        
+        @media only screen and (max-width:1200px) {
+
+            /* 타이틀 가상요소 변경 */
+            .tit::after {
+                content: "1200px이하";
+                color: pink;
+            }
+
+            /* 기존이미지숨기기 */
+            .screen img:first-child {
+                display: none;
+            }
+
+            /* 다음이미지보이기 */
+            .screen img:nth-child(2) {
+                display: inline;
+
+            }
+        }
 
         /* 미디어쿼리 1200px이하 */
 
         /* 1100px 이하 */
-        
+        @media only screen and (max-width:1100px) {
+
+            /* 타이틀 가상요소 변경 */
+            .tit::after {
+                content: "1100px이하";
+                color: blue;
+            }
+
+            /* 기존이미지숨기기 */
+            .screen img:nth-child(2) {
+                display: none;
+            }
+
+            /* 다음이미지보이기 */
+            .screen img:nth-child(3) {
+                display: inline;
+
+            }
+        }
+
 
         /* 미디어쿼리 1100px 이하 */
 
         /* 1000px 이하 */
-        
+        @media only screen and (max-width:1000px) {
+
+            /* 타이틀 가상요소 변경 */
+            .tit::after {
+                content: "1000px이하";
+                color: beige;
+            }
+
+            /* 기존이미지숨기기 */
+            .screen img:nth-child(3) {
+                display: none;
+            }
+
+            /* 다음이미지보이기 */
+            .screen img:nth-child(4) {
+                display: inline;
+
+            }
+        }
+
 
         /* 미디어쿼리 1000px 이하 */
 
         /* 900px 이하 */
-        
+        @media only screen and (max-width:900px) {
+
+            /* 타이틀 가상요소 변경 */
+            .tit::after {
+                content: "900px이하";
+                color: brown;
+            }
+
+            /* 기존이미지숨기기 */
+            .screen img:nth-child(4) {
+                display: none;
+            }
+
+            /* 다음이미지보이기 */
+            .screen img:nth-child(5) {
+                display: inline;
+
+            }
+        }
+
 
         /* 미디어쿼리 900px 이하 */
 
         /* 850px 이하 */
-        
+        @media only screen and (max-width:850px) {
+
+            /* 타이틀 가상요소 변경 */
+            .tit::after {
+                content: "850px이하";
+                color: peru;
+            }
+
+            /* 기존이미지숨기기 */
+            .screen img:nth-child(5) {
+                display: none;
+            }
+
+            /* 다음이미지보이기 */
+            .screen img:nth-child(6) {
+                display: inline;
+
+            }
+        }
+
+
 
         /* 미디어쿼리 850px 이하 */
 
         /* 830px 이하 */
-        
+        @media only screen and (max-width:830px) {
+
+            /* 타이틀 가상요소 변경 */
+            .tit::after {
+                content: "830px이하";
+                color: yellow;
+            }
+
+            /* 기존이미지숨기기 */
+            .screen img:nth-child(6) {
+                display: none;
+            }
+
+            /* 다음이미지보이기 */
+            .screen img:nth-child(7) {
+                display: inline;
+
+            }
+        }
+
         /* 미디어쿼리 830px 이하 */
 
         /* 810px 이하 */
-        
+        @media only screen and (max-width:810px) {
+
+            /* 타이틀 가상요소 변경 */
+            .tit::after {
+                content: "810px이하";
+                color: rgb(140, 0, 255);
+            }
+
+            /* 기존이미지숨기기 */
+            .screen img:nth-child(7) {
+                display: none;
+            }
+
+            /* 다음이미지보이기 */
+            .screen img:nth-child(8) {
+                display: inline;
+
+            }
+        }
 
         /* 미디어쿼리 810px 이하 */
 
         /* 790px 이하 */
-        
+        @media only screen and (max-width:790px) {
+
+            /* 타이틀 가상요소 변경 */
+            .tit::after {
+                content: "790px이하";
+                color: rgb(51, 255, 0);
+            }
+
+            /* 기존이미지숨기기 */
+            .screen img:nth-child(8) {
+                display: none;
+            }
+
+            /* 다음이미지보이기 */
+            .screen img:nth-child(9) {
+                display: inline;
+
+            }
+        }
+
         /* 미디어쿼리 790px 이하 */
 
         /* 770px 이하 */
-        
+        @media only screen and (max-width:770px) {
+
+            /* 타이틀 가상요소 변경 */
+            .tit::after {
+                content: "770px이하";
+                color: rgb(255, 0, 221);
+            }
+
+            /* 기존이미지숨기기 */
+            .screen img:nth-child(9) {
+                display: none;
+            }
+
+            /* 다음이미지보이기 */
+            .screen img:nth-child(10) {
+                display: inline;
+
+            }
+
+            /* .bx가상요소 이미 */
+            .bx::after {
+                background-position: top;
+                background-size: auto 60%;
+            }
+
+
+        }
+
 
         /* 미디어쿼리 770px 이하 */
     </style>
