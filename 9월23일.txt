@@ -1,0 +1,119 @@
+2021.09.23 목
+윈도우 H 자모음분리 윈도우 . 자모음합체
+DOM(html 지도)
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>001.자바스크립트 기본 + DOM선택법</title>
+    <!-- 자바스크립트 코딩구역 - 인터널방식 -->
+    <script>
+       
+
+
+        } //////////// showMe 함수 //////////////////
+        /////////////////////////////////////////////
+
+        /*//////////////////////////////////////////// 
+            함수명: circle
+            기능 : 선택요소 중앙으로 보내기!
+        */////////////////////////////////////////////
+        function circle(num){ // num 순번전달변수
+            //1. 함수호출확인 및 전달값확인
+            console.log(num+"나야나!")
+            //2. 대상선정 : .circle
+            var cc = document.querySelectorAll(".circle");
+            // 3. 변경내용 : 트렌지션으로 화면중앙으로 이동하기!
+            console.log("개수:"+cc.length);
+            // 트렌지션
+            cc.item(num).style.transition = "1s ease-out";
+            // 회면중앙이동
+            cc.item(num).style.top = 50%;
+            cc.item(num).style.right = 50%;
+            cc.item(num).style.transform = "translate(50%, -50%)"
+
+        } ////////// circle함수////////////////////////
+        //////////////////////////////////////////////
+
+
+        /* //////////////////////////////////////////////////////
+            함수명: rect
+            기능: 오른쪽 상단으로 이동하여 사각형으로 전체채우기
+        
+        *///////////////////////////////////////////////////////
+        function rect(){
+            
+            console.log("사각사각!");
+
+            var rt = document.querySelector("#rect");
+            
+
+        } ////////////////rect함수//////////////////////////////
+        /////////////////////////////////////////////////////
+
+
+    </script>
+    <style>
+        .pbox{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0; /* p태그 마진,패딩0 */
+            font-size: 24px;
+            width: 700px;
+            height: 600px;
+            border: 4px solid purple;
+            color: #ff0;
+            text-shadow: 1px 1px 1px #000;
+            /* background: url(./images/kimbs.jpg) no-repeat top/cover; */
+        }
+
+        .circle, #rect {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .circle:first-of-type {
+            background-image: url(./images/01.png);
+        }
+        .circle:nth-child(2) {
+            background-image: url(./images/02.png);
+        }
+
+        .circle:nth-child(3) {
+            background-image: url(./images/03.png);
+        }
+
+        #rect {
+            top: 40%;
+            background-image: url(./images/04.png);
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="pbox" onclick="showMe()" title="여기를 클릭하세요!">
+        나는 요즘 매일 생각한다! <br>
+        도대체 <span id="name"></span>
+    </p>
+
+    <div class="circle" onclick="circle(0)"></div>
+    <div class="circle" onclick="circle(1)"></div>
+    <div class="circle" onclick="circle(2)"></div>
+
+    <div id="rect" onclick="rect()"></div>
+    
+
+    
+</body>
+</html>
