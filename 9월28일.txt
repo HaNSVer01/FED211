@@ -1,0 +1,11 @@
+9월 28일 
+
+
+HTML 화면 줄여도 고정
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=sooni_&logNo=220132595646
+이미지박스 고정
+
+디버그 팢기
+f11
+종료
+f8
