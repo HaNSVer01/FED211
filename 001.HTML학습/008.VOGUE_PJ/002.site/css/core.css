@@ -26,11 +26,23 @@
 /* 스타일별 비율밀기 */
 /* 이미지 하나짜리 */
 .pt1.rbx::before{
-    padding-top: 50%;
+    padding-top: 55.69%;
+    /* 
+        비율계산 (보그사이트 메인 이미지 1개)
+        1300px : 724px = 100% : ?%
+        ?% = 724px * 100% / 1300px
+        ?% = 55.69%
+    */
 }
-/* 이미지 세개짜리 */
+/* 이미지 세개짜리 부모의 가로크기의 50%*/
 .pt2.rbx::before{
-    padding-top: 60%;
+    padding-top: 50%;
+        /* 
+        비율계산 (보그사이트 이미지 3개)
+        1300px : 650px = 100% : ?%
+        ?% = 650px * 100% / 1300px
+        ?% = 50%
+    */
 }
 /* 비율박스 속박스 */
 .rbxIn {
@@ -45,4 +57,16 @@
 .cbx{
     height: 100%;
     /* 부모박스를 채움 */
+}
+/* .pt2아래 .cbx만 float:left와 3등분 적용 */
+.pt2 .cbx {
+    float: left;
+    width: 33.33%;
+}
+
+/* 배경이미지 공통 */
+.bgi {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
