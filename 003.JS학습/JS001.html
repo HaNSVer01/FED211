@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>001. 자바스크립트</title>
+    <title>001. 자바스크립트 기본 + DOM선택법</title>
+    <script>
+        /* 
+        -> JS는 명령어 실행코드를 만나는 즉시 실행됨 그래서 내가 원하는 시덤에 원하는 이벤트에 명령어코드를 실행하려면 함수가 필요하다!
+
+        [ JS의 함수 ]
+        - 정의: 특정실행코드를 특정이벤트에 실행하도록 호출시에만 코드를 실행하는 코드저장공간
+        - 형식 : function 함수명 (변수) {코드구역}
+        - 호출 : 함수명(값) - 값은 함수의 변수 개수만큼 보냄
+
+        [ JS의 이벤트란? ]
+        - 브라우저에서 실행되는 입력관련 시점을 구분하여 알려주는 요소
+
+        - 이벤트 종류:
+        1) 마우스관련 이벤트
+        - click, dbclick, mouseover, mouseout, ...
+        2) 키보드 관련 이벤트
+        - keydown, keyup, keypress,...
+        3) 기타이벤트
+        - load, focus, blur,...
+
+        - 이벤트 발생 시점에 함수를 호출하여 의도한 html,css변경을 실행함 
+
+        - 이벤트와 함수를 연결하려면 html 요소 속성에 이벤트 속성이 이미 만들어져 있다!!!
+            이 속성값으로 함수를 호출한다!
+
+        [ HTML 이벤트 속성 ]
+        - on+이벤트명 = 값
+        예) onmouseover="" / onkeypress="" / onload=""
+
+        [ JS에서 따옴표의 의미! ]
+        - 값을 의미!(string:문자값)
+        - 따옴표를 쓰지 않은 문자는 일반적으로 변수/객체이름이다!
+
+        */
+    </script>
+    <style>
+        .pbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0; /* p태그 마진,패딩0 */
+            font-size: 24px;
+            width: 700px;
+            height: 600px;
+            border: 4px solid purple;
+            color: #ff0;
+            text-shadow: 1px 1px 1px #000;
+            background: url(./images/kimbs.jpg) no-repeat top/cover; 
+        }
+
+        .circle, #rect {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .circle:first-of-type {
+            background-image: url(./images/01.png);
+        }
+        .circle:nth-of-type(2) {
+            background-image: url(./images/02.png);
+        }
+        .circle:nth-of-type(3) {
+            background-image: url(./images/03.png);
+        }
+        #rect {
+            top: 40%;
+            background-image: url(./images/04.png);
+            font-size: 40px;
+            text-align: center;
+            color: red;
+            line-height: 200px;
+            white-space: nowrap;
+        }
+    </style>
+
 </head>
 <body>
-    
+    <p class="pbox" onclick="showMe()" title="여기를 클락하세요!">
+        나는 요즘 매일 생각한다! <br>
+        도대체 <span></span>
+    </p>
+
+    <div class="circle" onclick="circle(0)"></div>
+    <div class="circle" onclick="circle(1)"></div>
+    <div class="circle" onclick="circle(2)"></div>
+
+    <div id="rect" onclick="rect()"></div>
+
 </body>
 </html> 
