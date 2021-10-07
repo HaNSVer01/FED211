@@ -6,6 +6,10 @@
 @import url(core.css);
 @import url(common.css);
 
+/* 메인 페이지 공통 디자인 */
+.bgc {
+    background-color: #f9f9f9;
+}
 
 /*************** 2. 메인영역 ******************/
 .cont>div{
@@ -25,7 +29,7 @@
 }
 .bg4{
     background-image: url(../images/cont2-3.jpg);
-}
+} 
 /* 3번 컨텐츠 */
 .bg5{
     background-image: url(../images/cont3a.jpg);
@@ -74,8 +78,4 @@
 /* 파트타입2 - 이미지3개 */
 .pt2{
     /* height: 650px; */
-}
-/***************** 3. 하단영역 *********************/
-.info{
-    height: 285px;
 }

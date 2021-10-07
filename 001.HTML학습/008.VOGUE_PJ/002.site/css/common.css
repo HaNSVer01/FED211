@@ -6,15 +6,22 @@
 */
 
 /* 공사중 외곽선 */
-body * {
+/* body * {
     outline: 1px dashed rgb(182, 182, 182);
-}
+} */
 
 /**************** 1. 상단영역 *****************/
+#top { /* 상단 최상위 부모박스 */
+    position: relative;
+    z-index: 9999;
+    box-shadow: 0 0 4px #c0c0c0
+    /* 박스그림자 */
+}
 .top{
     min-height: 206px;
     /* 206px 잡고 있다가 내용늘면 늘어남! */
 }
+
 
 /* 1-1. 상단메뉴 */
 .tmenu{
@@ -39,7 +46,7 @@ body * {
     /* 디자인 적용위해! */
     width: 16px;
     height: 16px;
-    font-size: 16px;
+    font-size: 16px; 
     /* 안줘도 html상속된 사이즈는 16px이다 */
     text-align: center;
     /* 박스내의 인라인요소 가로중앙정렬 */
@@ -217,3 +224,48 @@ body * {
     color: #f00;
 }
 
+/***************** 3. 하단영역 *********************/
+.info{
+    min-height: 285px;
+    /* 최소 285px높이를 유지하다가 내용이 많아지면 늘어남 */
+    background-color: #000;
+    box-sizing: border-box;
+    padding: 70px;
+    font-family: 'Roboto', 'NanumBarunGothic' sans-serif;
+}
+
+/* 3-1. 하단로고 */
+.blogo {
+    text-align: center;
+}
+
+/* 3-2. 회사주소  */
+.addr {
+    font-style: normal; /* 이탤릭해제 */
+    text-align: center;
+    font-size: 11px;
+    color: #747474;
+    margin: 20px 0 10px;
+    /* 위 20px 양쪽 0 아래 10px */
+}
+
+/* 3-3. 하단링크 */
+.blink {
+    display: flex;
+    flex-wrap: wrap;
+    /* 컨텐츠 크기보다 작아지면 줄바꿈 */
+    justify-content: center;
+    /* 플렉스 가로방향 정렬 -> justify-content */
+}
+
+/* 하단링크 a요소 */
+.blink a {
+    color: #747474;
+    font-size: 13px;
+    margin: 0 5px;
+}
+
+/* 마지막 li만 두껍게 */
+.blink li:last-child a {
+    font-weight: bold;
+}
