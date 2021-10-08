@@ -1,4 +1,4 @@
-DOM 이란 무엇인가?
+DOM 이란 무엇인가? 
 (Document Object Model)
 
 - 로딩된 html문서는 트리구조의 형태로 html요소의 
