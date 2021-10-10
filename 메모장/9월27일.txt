@@ -1,0 +1,79 @@
+기능 상관없이 일단 레이아웃 정확히 잡기 
+
+초록을 백그라운드 컬러로 깔기 o
+
+
+일단 작은 lp판 사각형으로 넣어보기 숫자넣기? 0
+width: 150px;
+height: 150px;
+
+해상도 늘렸다줄였다 
+cover말고 h값 100%
+
+맥14인치 시발!!!!!!!!!!!!!!!!!!!
+여기 모니터랑 하나도 안맞다!!!!!!!!!!!!!!시발
+동영상 
+스크린샷으로 저장하거나 변환파일로 
+https://www.youtube.com/watch?v=8fBgJlu8joE
+여기서 추출
+
+
+다음주 10/5화요일 설계도 작성하기 
+상단영역 구분해놓아라 레이아웃 h500px 자세히 안해도 되고 
+요구사항&분석에따른내용 자세히5가지 정도 
+
+
+이미지 굴리기
+transform_pj / index.html
+
+html
+        /* 
+            6. rotate(각도deg) - 원형회전
+            - 각도의 숫자가 양수면 시계방향
+                (음수는 반시계)
+            - 기본회전축은 정중앙
+                (변경가능: transform-origin)
+           */
+        #trans6:hover img {
+            transform: rotate(5423deg);
+            transition-duration: 10s;
+            /* 트렌지션 시간 변경하기 */
+        }
+
+        /* 회전축 변경하기 */
+        #trans6 img {
+            transform-origin: center;
+            /* 기본값 */
+            /* 
+                transform-origin: 가로값 세로값;
+                - 가로값: left, right, center, 몇px, 몇%
+                - 세로값: top, bottom, center, 몇px, 몇%
+                - 기본값은 center임!
+               */
+    </style>
+</head>
+
+
+
+<body>
+    <h1 class="tit">트랜스폼 연습</h1>
+    <div class="cont">
+        <div id="trans1"><img src="images/cast01.jpg" alt="캐릭터"></div>
+        <div id="trans2"><img src="images/cast02.jpg" alt="캐릭터"></div>
+        <div id="trans3"><img src="images/cast03.jpg" alt="캐릭터"></div>
+        <div id="trans4"><img src="images/cast04.jpg" alt="캐릭터"></div>
+        <div id="trans5"><img src="images/cast05.jpg" alt="캐릭터"></div>
+        <div id="trans6"><img src="images/cast01.jpg" alt="캐릭터"></div>
+        <div id="trans7"><img src="images/cast02.jpg" alt="캐릭터"></div>
+        <div id="trans8"><img src="images/cast03.jpg" alt="캐릭터"></div>
+        <div id="trans9"><img src="images/cast04.jpg" alt="캐릭터"></div>
+        <div id="trans10">
+            <img src="images/cast02.jpg" alt="유정이">
+            <img src="images/cast03.jpg" alt="보거미">
+        </div>
+    </div>
+
+</body>
+
+</html>
+        }
