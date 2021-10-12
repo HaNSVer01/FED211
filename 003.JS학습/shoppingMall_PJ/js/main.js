@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
     // console.log("슬라이드개수:" + scnt)
 
     // 슬라이드 순번 변수(click함수 바깥 )
-    let snum = 0;
+    let snum = 0; 
 
     // 변경대상 블릿li
     let indic = document.querySelectorAll(".indic li");
