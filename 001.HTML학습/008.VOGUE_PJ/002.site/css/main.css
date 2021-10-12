@@ -4,7 +4,7 @@
 /* 외부CSS 합치기 */
 @import url(reset.css);
 @import url(core.css);
-@import url(common.css);
+@import url(common.css); 
 
 /* 메인 페이지 공통 디자인 */
 .bgc {
