@@ -10,7 +10,7 @@
 .bgc {
     background-color: #f9f9f9;
 }
-
+ 
 /*************** 2. 메인영역 ******************/
 .cont>div{
     outline: 2px dashed red;
@@ -71,11 +71,3 @@
 
 
 
-/* 파트타입1 - 이미지1개 */
-.pt1{
-    /* height: 724px; */
-}
-/* 파트타입2 - 이미지3개 */
-.pt2{
-    /* height: 650px; */
-}
