@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* VOGUE PJ 공통 기능 디자인 - common.css */ 
+/* VOGUE PJ 공통 기능 디자인 - common.css */
 /* 
     공통기능: 상단영역(로고, 메뉴, GNB)
             하단영역(하단로고, 회사정보)
@@ -359,9 +359,9 @@
     z-index: 999;
 
     /* 트랜지션: 속시이지 */
-    transition: .3s;
+    transition: background-color .3s;
 
-    display: none; 
+    display: none;
     /* 처음에 안보임 */
 }
 /* 탑버튼 마우스 오버시 */
