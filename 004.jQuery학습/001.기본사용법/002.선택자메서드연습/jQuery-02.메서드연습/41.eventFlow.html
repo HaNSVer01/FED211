@@ -19,7 +19,7 @@
 		$("div").click(function(e){
 			e.stopPropagation();//버블링차단!
 			$(this).css({backgroundColor:"green"});
-		});///// click ////////////
+		});///// click //////////// 
 		
 		//엄마집
 		$("p").click(function(e){
@@ -35,6 +35,8 @@
 		
 		/*
 			[ 이벤트 흐름 ]
+
+			기능이 겹칠때 이벤트 버블링!!이생김 그걸 없애주기위해  e.stopPropagation();//버블링차단!(jQuery기법) 쓴다!!
 
 			1. 캡쳐단계 : 최상위 부모요소로부터 말단요소까지 내려감
 
