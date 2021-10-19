@@ -24,6 +24,8 @@
 .lnb ul{
     display: flex;
     /* 플렉스박스 */
+    flex-wrap: wrap;
+    /* 자동줄바꿈 */
     justify-content: center;
     /* 가로컨텐츠 중앙 */
 }
@@ -195,7 +197,8 @@
     background-image: url(../images/shopping/cont2-3a.jpg);
 }
 
+
 /* runway 타이틀 작은글씨 */
-.cbx h2 small {
+.cbx h2 small{
     font-size: 14px;
 }

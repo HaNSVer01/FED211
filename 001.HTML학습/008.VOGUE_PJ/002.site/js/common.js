@@ -45,6 +45,7 @@ $(function () { ////// jQB ////////////////////////
 
     /* 
         [ 스크롤 이벤트 처리구역 설정하기 ]
+
         1. 스크롤이벤트는 스크롤바가 움직일때 발생한다.
         (마우스휠 이벤트와 다름!)
         2. 제이쿼리에서 scroll() 메서드로 구현함
@@ -128,46 +129,52 @@ $(function () { ////// jQB ////////////////////////
         }, 1000, "easeInOutQuad");
     }); ///////// click ////////////
 
-    //////////////// 모바일 코드 ////////////////
 
-    // 햄버거 버튼 클릭시 메뉴 보이기&숨기기
-    // 이벤트대상 : .hbtn - 햄버거버튼
+    ////////// 모바일 코드 ////////////////////////
+
+    // 햄버거버튼 클릭시 메뉴 보이기/숨기기 //
+    // 이벤트대상: .hbtn - 햄버거버튼
     // 변경대상: #mobx - 모바일메뉴박스
     $(".hbtn").click(function(e){
 
         // 기본이동막기
         e.preventDefault();
 
-        // 모바일 메뉴 슬라이드 에니메이션
-        $("#mobx").slideToggle(600);
-        $('#top').toggleClass("hv");
-            // togleClass(클래스명
-            // 해당클래스가 없으면 넣고 있으면 뺌!
+        // 모바일 메뉴 슬라이드 애니메이션
+        $("#mobx").slideToggle(600,"easeInOutQuart");
+        $("#top").toggleClass("hv");
+        // toggleClass(클래스명)
+        // 해당클래스가 없으면 넣고 있으면 뺌!
+        // .hv 클래스는 이미 #top의 높이값을
+        // 100vh로 설정한 클래스임!
 
-            // .hv 클래스는 이미 #top의 높이값을
-            // 100vh로 설정한 클래스
-         // slideToggle ///////////////////////
-    }); ///////////////// click ///////////////////////
-
-    // 검색버튼 클릭시 검색창 보이기&숨기기
-    // 이벤트대상 : .sbtn - 검색버튼 
-    // 변경대상 : .mos - 검색창박스
-    $(".sbtn").click(function(){
-
-        $(".mos").slideToggle(300);
-        // 검색창 보이기&숨기기 : slideToggle
-    }); /////////// click //////////////////
+    }); ////////// click ///////////
 
 
+    /// 검색버튼 클릭시 검색창 보이기/숨기기 ///
+    // 이벤트대상: .sbtn - 검색버튼
+    // 변경대상: .mos - 검색창박스
+    $(".sbtn").click(function(e){
 
-        // slideToggle (시간,이징,함수)
-        // -> display:none이면 slideDown
-        // 아니면 slideUp을 실행함
-        // 토글(toggle)은 두가지 기능 겸하는 것을 말함
+        // 기본이동막기
+        e.preventDefault();
 
-        // 확장: 
-        // toggle(시간,이징,함수) -> show/hide전환
-        // fadeToggle(시간,이징,함수) -> fadeIn/fadeOut전환
+        // 검색창 보이기/숨기기 : slideToggle()
+        $(".mos").slideToggle(300,"easeOutQuint");
+
+    }); ////////// click ///////////////////
+
+
+    
+    // slideToggle(시간,이징,함수)
+    // -> display:none이면 slideDown
+    // 아니면 slideUp 을 실행함
+    // 토글(toggle)은 두가지 기능 겸하는 것을 말함
+
+    // 확장:
+    // toggle(시간,이징,함수) -> show/hide전환
+    // fadeToggle(시간,이징,함수) -> fadeIn/fadeOut전환
+
 
 
 

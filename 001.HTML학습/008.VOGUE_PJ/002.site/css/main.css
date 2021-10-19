@@ -1,15 +1,17 @@
-@charset "utf-8"; 
+@charset "utf-8";
 /* VOGUE PJ 메인 CSS - main.css */
 
 /* 외부CSS 합치기 */
 @import url(reset.css);
 @import url(core.css);
-@import url(common.css); 
+@import url(common.css);
 
 /* 메인 페이지 공통 디자인 */
 .bgc {
     background-color: #f9f9f9;
 }
+
+
 /*************** 2. 메인영역 ******************/
 .cont>div{
     outline: 2px dashed red;
@@ -28,7 +30,7 @@
 }
 .bg4{
     background-image: url(../images/cont2-3.jpg);
-} 
+}
 /* 3번 컨텐츠 */
 .bg5{
     background-image: url(../images/cont3a.jpg);
@@ -67,6 +69,4 @@
 .bg15{
     background-image: url(../images/cont7-3.jpg);
 }
-
-
 
