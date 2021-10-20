@@ -16,7 +16,7 @@ let reFn = () => {
     else {
         mob = 0;
         // 그 밖의 경우엔 mob를 0으로!
-    }
+    } 
     console.log("모바일상태:"+mob);
 }; ////// reFn함수 ////////
 
