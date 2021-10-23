@@ -1,4 +1,0 @@
-https://lemkus.com/
-보그 응용 웹사이트 참고 
-
-CSS translate3d 속성 참고
