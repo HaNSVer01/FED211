@@ -22,16 +22,16 @@
                 (4) 옵션은 skitter메서드에 중괄호 객체로 표현함
                 -> https://skitter-slider.net/options.html
          */
-         $('.box_skitter').skitter({
-            dots: true, // 메뉴블릿(false가 기본값)
-            preview: true, // 블릿에 마우스 오버시 미리보기
-            label: false, // 글설명 숨기기(true는 보임-기본값)
-            controls: true, // 진행,멈춤버튼 보이기(false기본값)
-            interval: 1000, // 자동넘김 시간간격(1/1000초)
-            animation: "blindWidth" // 특정넘김효과 한가지만 줄경우 셋팅!
-         });
+        $('.box_skitter').skitter({
+        dots: true, // 메뉴블릿(false가 기본값)
+        preview: true, // 블릿에 마우스 오버시 미리보기
+        label: false, // 글설명 숨기기(true는 보임-기본값)
+        controls: true, // 진행,멈춤버튼 보이기(false기본값)
+        interval: 1000, // 자동넘김 시간간격(1/1000초)
+        animation: "directionLeft cubeSpread glassCube" // 특정넘김효과 한가지만 줄경우 셋팅!
+        });
 
-          /*
+        /*
             스키터 애니메이션 효과명:			
 			cube 
             cubeRandom block cubeStop 
